@@ -12,12 +12,13 @@
     background-color: antiquewhite;
     display: flex;
     /* flex-direction:column; */
-    justify-content: space-around;
+    justify-content: center;
     /* align-content: center; */
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
     height: 500px;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 .main .box {
@@ -27,6 +28,15 @@
     margin: 6px;
     padding: 25px;
     border-radius: 10px;
+}
+
+.main #box1 {
+    /* order: 4; */
+    /* flex-grow: 3; */
+    flex-shrink: 2;
+    /* flex-basis: 320px; */
+    /* flex: 0 12 max-width(300px); */
+    align-self: start;
 }
 
 img {
