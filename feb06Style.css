@@ -23,7 +23,7 @@
 
 .main .box {
     width: 300px;
-    height: 200px;
+    height: 350px;
     background-color: brown;
     margin: 6px;
     padding: 25px;
@@ -41,8 +41,8 @@
 
 img {
     overflow: hidden;
-    width: 17.1vh;
-    height: 100%;
+    width: 300px;
+    height: 200px;
 }
 
 
