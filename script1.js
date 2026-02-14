@@ -29,7 +29,10 @@ use backtick ` to implement template string
 
 
 let btn = document.getElementsByTagName("button");
-btn.addEventListener("click", function() {
-    console.log("Button Clicked");
+btn[0].addEventListener("click", function() {
+    // console.log("Button Clicked");
+    // console.log(btn[0]);
+    alert("Button clicked!");
+    
 })
 

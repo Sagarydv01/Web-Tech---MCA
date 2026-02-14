@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class = "calcBox">
+        <h2>Calculator</h2>
+        <form id="calcForm">
+            <input type="number" placeholder="num1" id="num1" required>
+            <br>
+
+            <select id="operator">
+                <option value="+">Addition</option>
+                <option value="-">Subtraction</option>
+                <option value="*">Multiplication</option>
+                <option value="/">Division</option>
+                <option value="%">Remainder</option>
+            </select>
+            <br>
+
+            <input type="number" placeholder="num2" id="num2" required>
+            <br>
+
+            <button type="submit">=</button>
+        </form>
+
+        <h3>Result: <span id="result">0</span></h3>
+    </div>
+
+    <script src="calculate.js"></script>
+</body>
+</html>
