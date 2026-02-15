@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Form Validation</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        form {
+            width: 300px;
+            margin: 50px auto;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="post">
+
+    <!-- Email Field -->
+    <label>Email:</label>
+    <input type="email" 
+           name="email" 
+           placeholder="Enter your email" 
+           required>
+
+    <!-- Phone Field (10 digits only) -->
+    <label>Phone:</label>
+    <input type="tel" 
+           name="phone"
+           pattern="[0-9]{10}" 
+           placeholder="Enter 10 digit phone number"
+           required>
+
+    <!-- Password Field -->
+    <label>Password:</label>
+    <input type="password" 
+           name="password"
+           minlength="8"
+           pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}"
+           placeholder="Minimum 8 characters"
+           required>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
