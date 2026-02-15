@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+/* Tablet layout */
+@media (max-width: 992px) {
+    .container {
+        width: 768px;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        background: lightgray;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Adaptive Layout</h1>
+    <p>Layout changes at fixed breakpoints.</p>
+</div>
+
+</body>
+</html>
