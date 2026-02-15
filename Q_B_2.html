@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    display: flex;
+    gap: 20px;
+    margin: 50px;
+}
+
+/* content-box example */
+.box1 {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 10px solid red;
+    background: lightblue;
+}
+
+/* border-box example */
+.box2 {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 10px solid green;
+    background: lightgreen;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box1">content-box</div>
+    <div class="box2">border-box</div>
+</div>
+
+</body>
+</html>
