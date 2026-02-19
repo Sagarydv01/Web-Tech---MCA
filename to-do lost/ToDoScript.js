@@ -17,12 +17,13 @@ btn.addEventListener("click", () => {
         list.appendChild(li);
         let span = document.createElement("span");
         span.innerHTML = "X";
-        li.appendChild(span);
-        
-        let dlt = document.querySelector(span.parentElement);
-        dlt.addEventListener("click", () => {
-            
-        })
-        
+        li.appendChild(span); 
     } 
+});
+
+list.addEventListener("click", (e) => {
+    // console.log(e);
+    if (e.target.tagName === "SPAN") {
+        e.target.parentElement.remove();    // removes the task
+    }
 });
