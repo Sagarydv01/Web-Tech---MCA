@@ -1,0 +1,24 @@
+------------------
+Icons:
+------------------
+- font-awesome
+- flaticon
+
+------------------
+Images:
+------------------
+- freepik
+- pexels
+
+
+------------------
+| Gradient
+------------------
+- colorspace
+
+------------------
+Resources:
+------------------
+- colorHunt
+- cdnjs
+- animate.style
