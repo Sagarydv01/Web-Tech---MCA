@@ -4,7 +4,7 @@ let obj1 = {
 };
 
 let obj2 = {
-    course: "BCA",
+    course: "MCA",
     city: "Delhi"
 };
 
