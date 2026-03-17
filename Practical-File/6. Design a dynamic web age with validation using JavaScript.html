@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <title>Form Validation</title>
+
+    <script>
+        function validateForm()
+        {
+            var name = document.forms["myForm"]["name"].value;
+            var email = document.forms["myForm"]["email"].value;
+            var age = document.forms["myForm"]["age"].value;
+
+            if(name == "")
+            {
+                alert("Name must be filled out");
+                return false;
+            }
+
+            if(email == "")
+            {
+                alert("Email must be filled out");
+                return false;
+            }
+
+            if(age == "" || age < 18)
+            {
+                alert("Age must be 18 or above");
+                return false;
+            }
+
+            alert("Form submitted successfully");
+            return true;
+        }
+    </script>
+
+</head>
+
+<body>
+
+<h2 align="center">Student Registration Form</h2>
+
+<form name="myForm" onsubmit="return validateForm()">
+
+Name: <br>
+<input type="text" name="name" placeholder="Enter your full name" title="Name field"><br><br>
+
+Email: <br>
+<input type="text" name="email" placeholder="Enter your email" title="Email field"><br><br>
+
+Age: <br>
+<input type="number" name="age" placeholder="Enter your age" title="Age field"><br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Functions in JavaScript</title>
+</head>
+
+<body>
+
+<h2>JavaScript Nested Functions Example</h2>
+
+<p id="result"></p>
+
+<script>
+
+function outerFunction(a, b)
+{
+    function innerFunction()
+    {
+        return a + b;
+    }
+
+    return innerFunction();
+}
+
+var output = outerFunction(10, 20);
+
+document.getElementById("result").innerHTML =
+"Sum using Nested Function = " + output;
+
+</script>
+
+</body>
+</html>
