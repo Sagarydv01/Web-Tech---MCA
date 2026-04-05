@@ -1,6 +1,6 @@
 let obj1 = {
     name: "Sagar",
-    age: 22
+    age: 21
 };
 
 let obj2 = {
