@@ -1,0 +1,5 @@
+.smarttomcat/
+.idea/
+*.log
+*.class
+target/
