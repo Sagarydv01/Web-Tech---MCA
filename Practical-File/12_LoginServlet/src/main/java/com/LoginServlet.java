@@ -1,14 +1,20 @@
 package com;
 
-import java.io.*;
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 import jakarta.servlet.annotation.WebServlet;
-import java.sql.*;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/login")   // replaces web.xml
 public class LoginServlet extends HttpServlet {
-
+    
     public void doPost(HttpServletRequest req, HttpServletResponse res)
             throws IOException {
 
